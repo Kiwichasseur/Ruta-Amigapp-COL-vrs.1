@@ -91,7 +91,7 @@ font-size: 1.6em;
 		rgba(0,0,0,0.5),
 		rgba(0,0,0,0.5)
 	)
-	,url(./imagenes/mapa\ sena.jpeg);
+	,url(../assets/img/mapa\ sena.jpeg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
@@ -112,7 +112,7 @@ font-size: 1.6em;
 		rgba(0,0,0,0.5),
 		rgba(0,0,0,0.5)
 	)
-	,url(./imagenes/mapa\ sena.jpeg);
+	,url(../assets/img/mapa\ sena.jpeg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
@@ -145,7 +145,7 @@ padding: 150px 12px;
 		rgba(0,0,0,0.5),
 		rgba(0,0,0,0.5)
 	)
-	,url(./imagenes/rutas-tiempo-real.jpg);
+	,url(../assets/img/rutas-tiempo-real.jpg);
 	background-position: center center;
 	background-size: cover;
 	padding: 50px 0px;
@@ -159,7 +159,7 @@ padding: 150px 12px;
 		rgba(0,0,0,0.5),
 		rgba(0,0,0,0.5)
 	)
-	,url(./imagenes/seguridad.jpg);
+	,url(../assets/img/seguridad.jpg);
 	background-position: center center;
 	background-size: cover;
 	padding: 50px 0px;
@@ -173,7 +173,7 @@ padding: 150px 12px;
 		rgba(0,0,0,0.5),
 		rgba(0,0,0,0.5)
 	)
-	,url(./imagenes/foro.png);
+	,url(../assets/img/foro.png);
 	background-position: center center;
 	background-size: cover;
 	padding: 50px 0px;
@@ -251,7 +251,7 @@ margin: 0px;
 }
 
 #SomosRuta-Amigaap .img-container{
-	background-image:url("./imagenes/quienes-somos.jpg");
+	background-image:url("../assets/img/quienes-somos.jpg");
 	background-size: cover;
 	background-position: center center;
 	height: 500px;
