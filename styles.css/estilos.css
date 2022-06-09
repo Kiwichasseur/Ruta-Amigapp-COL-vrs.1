@@ -79,6 +79,15 @@ font-weight: bold;
 color: darkorange;
 font-size: 1.6em;
 }
+#container{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 50%;
+	height: 30%;
+	margin: auto;
+	transform: translate(-50%, -110px);
+}
 #clima{
 	display: flex;
 	align-items: center;
