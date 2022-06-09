@@ -83,21 +83,25 @@ font-size: 1.6em;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	text-align: center;
-	flex-direction: column;
-	height: 90vh;
+	text-align: center;	
+	margin:auto;
+	height: 950px;
+	width: 950px;
 	background-image:linear-gradient(
 		0deg,
 		rgba(0,0,0,0.5),
 		rgba(0,0,0,0.5)
 	)
-	,url(../assets/img/mapa\ sena.jpeg);
+	,url(../assets/img/café.webp);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
 }
 #clima h4{
 	color: darkorange;
+}
+#clima h3,h5{
+	color: whitesmoke;
 }
 
 #hero{

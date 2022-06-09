@@ -11,6 +11,11 @@ function consultaClima() {
     .then(data => {
       //convertimos formato json cadena en objeto de javascript
       let infoClima = JSON.parse(data);
-      document.getElementById("resultado").innerHTML = infoClima.main.temp;
+      let newClima = (parseFloat(infoClima.main.temp) - 270.15).toFixed(2);
+      let newClima1 = parseFloat(infoClima.main.humidity);
+      let newClima2 = parseFloat(infoClima.main.pressure);
+      document.getElementById("resultado").innerHTML = newClima + " °C";
+      document.getElementById("resultado1").innerHTML = newClima1 + " °C";
+      document.getElementById("resultado2").innerHTML = newClima2 + " Pa";
     }).catch((err) => {console.log("Info error: ", err);})
 }
