@@ -1,3 +1,4 @@
+//API DEL CLIMA
 function consultaClima() {
   let ciudad = document.getElementById("ciudad").value;
 
