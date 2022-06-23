@@ -36,9 +36,9 @@
             <!--Last name user-->
             <input class="input" type="text" id="lastName-user" name="lastName-user" placeholder="Apellido" />
             <!--Email user-->
-            <input class="input" type="text" id="email-user" name="email" placeholder="Correo" />
+            <input class="input" type="text" id="email-user" name="email-user" placeholder="Correo" />
             <!--password user-->
-            <input class="input" type="password" id="password-user" name="password" placeholder="Contraseña" />
+            <input class="input" type="password" id="password-user" name="password-user" placeholder="Contraseña" />
             <!--terms & conditions usuario-->
             <label class="terms-container"><input type="checkbox" id="cbox1" value="checkbox"> Aceptar términos y
               condiciones</label>
@@ -56,12 +56,12 @@
 
 //$busqueda=$GET['buscar'];
 //asignar variables y traer mediante el get, se referencia mediante el id
-$userName = $GET['name-user'];
-$lastNameUser = $GET['lastName-user'];
-$userEmail = $GET['email-user'];
-$userPassword = $GET['password-user'];
+$userName = $_GET['name-user'];
+$lastNameUser = $_GET['lastName-user'];
+$userEmail = $_GET['email-user'];
+$userPassword = $_GET['password-user'];
 
-require('conexion.php');
+require('../php/conexion.php');
 //If para validar si la conexión fue exitosa o no
 if (mysqli_connect_errno()) {
   echo "No pudo conectarse con la base de datos";
@@ -74,7 +74,7 @@ $conexion = mysqli_connect($db_host, $db_name, $db_user, $password);
 mysqli_set_charset($conexion, "utf8");
 
 //Insertar datos en la tabla usuario de la base de datos
-$consulta = "INSERT INTO usuario(nombre_usuario,apellido_usuario,correo_usuario,password_usuario)";
+$consulta = "INSERT INTO usuario(nombre_usuario,apellido_usuario,correo_usuario,password_usuario) values($userName,$lastNameUser,$userEmail,$userPassword)";
 //Revisa si los datos fueron insertados y devuelve un booleano
 $resultados = mysqli_query($conexion, $consulta);
 if ($resultados == false) {
