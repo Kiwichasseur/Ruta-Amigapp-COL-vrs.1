@@ -68,7 +68,7 @@ if (mysqli_connect_errno()) {
   exit();
 }
 //Funcion para mirar si la conexion fue exitosa
-$conexion = mysqli_connect($db_host, $db_name, $db_user, $password);
+$conexion = mysqli_connect($db_host, $db_name, $db_user, $db_password);
 
 //Para modificación del alfabeto latino
 mysqli_set_charset($conexion, "utf8");
@@ -78,9 +78,20 @@ $consulta = "INSERT INTO usuario(nombre_usuario,apellido_usuario,correo_usuario,
 //Revisa si los datos fueron insertados y devuelve un booleano
 $resultados = mysqli_query($conexion, $consulta);
 if ($resultados == false) {
-  echo "Error en la inserción de datos";
+  ?>
+  <script>
+  
+  alert ("Error en la inserción de datos");
+  </script>
+  <?php
 } else {
-  "Registro almacenado correctamente";
+  ?>
+  <script>
+  
+  alert ("Registro almacenado correctamente");
+  </script>
+  <?php
+  ;
 }
 ?>
 

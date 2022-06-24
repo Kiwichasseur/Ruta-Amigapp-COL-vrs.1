@@ -1,105 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Rutamigapp</title>
-  <link rel="stylesheet" href="./styles/index.css">
+  <link rel="stylesheet" href="./styles.css/estilos.css">
 </head>
+<body class="contenedor-general">
+ <header>
+   <div class="container">
+     <p class="logo">Ruta-Amigapp</p>
+     <nav>
+       <a href="#SomosRuta-Amigaap">Quienes somos</a>
+       <a href="#Nuestros-beneficios">Nuestros beneficios</a>
+       <a href="#caracteristicas">Caracteristicas</a>
+       <a href="./paginas/clima.html">Consulta el clima</a>
+       <a href="./paginas/registro.html">Registrate</a>
+       <a href="./paginas/inicio_sesion.html">Inicia sesion</a>
+     </nav>
+   </div>
+</header>
+<section id="hero">
+  <h1>Mira en tiempo real <br> las rutas sena</h1>
+  <button>Ver las rutas</button>
+</section>
+<section id="SomosRuta-Amigaap">
+  <div class="container">
+<div class="img-container"></div>
+<div class="texto">
+<h2>Somos <span class="color-acento">Ruta-Amigapp</span></h2>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos recusandae amet, deleniti earum voluptas porro modi dolore laborum ad ab exercitationem? Esse quisquam suscipit optio perferendis voluptas rerum ratione modi!</p>
+</div>
+</div>
+</div>
+</section>
+<section id="Nuestros-beneficios">
+  <div class="container">
 
-<body>
-  <!--Navbar-->
-  <header class="container-header sticky">
-    <h1 class="logo">Ruta Amigapp</h1>
-    <nav class="nav">
-      <a href="#SomosRuta-Amigaap">Quienes somos</a>
-      <a href="#Nuestros-beneficios">Nuestros beneficios</a>
-      <a href="#caracteristicas">Caracteristicas</a>
-      <a href="./pages/registro.php">Registro</a>
-      <a href="./paginas/inicio_sesion.html">Inicia sesion</a>
-    </nav>
-  </header>
-  <!--Imagen rutas-->
-  <section class="maps">
-  </section>
-  <div class="container-maps">
-    <h2 class="titulo-principal">Mira en tiempo real las rutas sena</h1>
-      <button class="button">Ver las rutas</button>
+  
+  <h2>Nuestros beneficios</h2>
+  <div id="beneficios">
+  <div class="carta">
+    <h3>Rutas en tiempo real</h3>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas ipsa facere architecto iusto laborum. Excepturi magni dolore exercitationem, totam soluta dolores minus molestias quod voluptatum? Sapiente, odio. Corrupti, dolore? Perspiciatis?
+        <br>
+        <button>Mas informacion</button>
+      </p>
+    
   </div>
-  <!--Información empresarial-->
-  <section>
-    <!--Who we are?-->
-    <div class="principal-container">
-      <div class="section_content">
-        <h2 class="sub-title">Somos <span class="sub-title-orange">Ruta-Amigapp</span></h2>
-        <hr>
-        <p class="paragraph">Es una aplicación híbrida creada por 6 aprendices de <b>ADSI</b> destinada los usuarios del
-          <b>SENA Armenia</b>, creada para
-          facilitar el transporte de los aprendices a su destino para de esta manera poder acceder de una manera más
-          sencilla a la educación de una manera segura.
-        </p>
-      </div>
-      <div class="icon">
-        <img src="./assets/img/quienes-somos.jpg">
-      </div>
-    </div>
-  </section>
-  <!--Multi cards-->
-  <section class="multi-card">
-    <h2 class="sub-title">Nuestros beneficios</h2>
-    <article class="container-cards">
-      <!--Maps-->
-      <div class="card">
-        <h3 class="subtitulo-index">Rutas en tiempo real</h3>
-        <p class="parrafo-index">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas ipsa facere architecto
-          iusto laborum. Excepturi magni dolore exercitationem, totam soluta dolores minus molestias quod voluptatum?
-          Sapiente, odio. Corrupti, dolore? Perspiciatis?
-          <br>
-          <button>Mas informacion</button>
-        </p>
-      </div>
-      <!--Security-->
-      <div class="card">
-        <h2 class="sub-title">Seguridad Sena</h2>
-        <p class="parrafo-index">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas ipsa facere architecto
-          iusto laborum. Excepturi magni dolore exercitationem, totam soluta dolores minus molestias quod voluptatum?
-          Sapiente, odio. Corrupti, dolore? Perspiciatis?
-          <br>
-          <button>Mas informacion</button>
-        </p>
-      </div>
-      <!--Forum-->
-      <div class="card">
-        <h2 class="sub-title">Foro Sena</h2>
-        <p class="parrafo-index">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas ipsa facere architecto
-          iusto laborum. Excepturi magni dolore exercitationem, totam soluta dolores minus molestias quod voluptatum?
-          Sapiente, odio. Corrupti, dolore? Perspiciatis?
-          <br>
-          <button>Mas informacion</button>
-        </p>
-      </div>
-      <!--Benefits-->
-      <div class="card">
-        <h3 class="subtitulo-index">Beneficios</h3>
-        <ul class="ul-index">
-          <li class="li-index">✔ 100% en tiempo real</li>
-          <li class="li-index">✔ Seguro y util para seguir tus rutas</li>
-          <li class="li-index">✔ Foro interactivo para opiniones y difusion de informacion</li>
-          <li class="li-index">✔ Aviso sobre rutas de interes al acercarse </li>
-        </ul>
-        </p>
-      </div>
-    </article>
-  </section>
-  <footer>
-    <div class="container">
-      <p class="parrafo-index">&copy; Ruta-Amigapp 2022</p>
-    </div>
-  </footer>
 
+  <div class="carta">
+    <h3>Seguridad sena</h3>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas ipsa facere architecto iusto laborum. Excepturi magni dolore exercitationem, totam soluta dolores minus molestias quod voluptatum? Sapiente, odio. Corrupti, dolore? Perspiciatis?
+        <br>
+        <button>Mas informacion</button>
+      </p>
+    
+  </div>
+  <div class="carta">
+    <h3>Foro sena</h3>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas ipsa facere architecto iusto laborum. Excepturi magni dolore exercitationem, totam soluta dolores minus molestias quod voluptatum? Sapiente, odio. Corrupti, dolore? Perspiciatis?
+        <br>
+        <button>Mas informacion</button>
+      </p>
+    </div>
+  </div>
+</div>
+</section>
+<section id="caracteristicas">
+  <div class="container">
+  <ul>
+    <li>✔ 100% en tiempo real</li>
+    <li>✔ Seguro y util para seguir tus rutas</li>
+    <li>✔ Foro interactivo para opiniones y difusion de informacion</li>
+    <li>✔ Aviso sobre rutas de interes al acercarse </li>
+  </ul>
+</div>
+</section>
 
+<footer>
+  <div class="container">
+  <p>&copy; Ruta-Amigapp 2022</p>
+</div>
+</footer>
+
+ 
 </body>
-
 </html>
